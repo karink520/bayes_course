@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Karin Knudson" />
+  <title>Bayesian Statistics</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="tufte.css"/>
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <article>
+<header>
+<h1 class="title">Bayesian Statistics</h1>
+<p class="author">Karin Knudson</p>
+</header>
+
+<h1 id="course-description">Course description</h1>
+<p>Bayesian statistics provides powerful tools for analyzing data, making inferences, and expressing uncertainty. This course will provide an introduction to a Bayesian perspective on statistics. Students will begin with some basics of probability and Bayes’ Theorem. We will spend the term looking at the far-reaching consequences and applications of this modest theorem as we learn to create and select statistical models, choose appropriate prior distributions, and apply our models to real data. This course will include a computational component with the freely available statistical software R.</p>
+
+<h1 id="essential-questions">Essential Questions</h1>
+<ul>
+<li><p>How is statistical analysis used and misused in society?</p></li>
+<li><p>How can we mathematically analyze probability?</p></li>
+<li><p>How do we construct and analyze a Bayesian model?</p></li>
+<li><p>How can we effectively present, interpret, and evaluate the results of (Bayesian) statistical analysis?</p></li>
+<li><p>How can we use computers to aid our statistical analysis?</p></li>
+</ul>
+<h1 id="resources">Resources</h1>
+<ul>
+<li><p>An Introduction to Bayesian Statistics, Second Edition, by William Bolstad</p></li>
+<li><p>Bayesian Data Analysis, Third Edition, by Gelman et al.</p></li>
+<li><p>Doing Bayesian Data Analysis, Second Edition, by John Kruschke</p></li>
+<li><p>R statistical software (https://cran.r-project.org)</p></li>
+</ul>
+<h1 id="grading">Grading</h1>
+<p>Grading will be weighted approximately according to the following percentages: 15% homework, 10% quizzes, 40% tests, 35% projects/presentations/labs.</p>
+<h1 id="outline-and-calendar">Outline and Calendar</h1>
+<ul>
+<li><p>Week 1 - Course expectations, introductions to language of statistics, misuse of statistics, sampling, data collection, R</p>
+<ul>
+<li><p>Day 1 - Introduction, Expectations, Misuse of Statistics examples, HW 1</p></li>
+<li><p>Day 2 (long block) - Introduction to language of statistics, sampling, HW 2</p></li>
+<li><p>Day 3 - Introduction to language of statistics, data collection, introduction to R, HW 3</p></li>
+</ul></li>
+<li><p>Week 2 - Probability, Bayes’ Theorem, interpretations of Bayes’ Theorem, interpretations of probability, discrete distributions</p>
+<ul>
+<li><p>Day 1 - Probability, Bayes’ theorem, HW 4</p></li>
+<li><p>Day 2 - Probability, Bayes’ theorem, Interpretations HW 5</p></li>
+<li><p>Day 3 (long block) - Introduction to language of statistics, data collection, introduction to R, HW 6</p></li>
+<li><p>Day 4 - Discrete distributions, HW 7</p></li>
+</ul></li>
+<li><p>Week 3 - Probability, Bayes theorem, discrete probability distributions, more R</p>
+<ul>
+<li><p>Day 1 - Probability, Bayes theorem, descriptive statistics in R, HW 8</p></li>
+<li><p>Day 2 - Discrete probability distributions, HW 9</p></li>
+<li><p>Day 3 (long block) - Discrete distributions</p></li>
+<li><p>Day 4 - Test 1</p></li>
+</ul></li>
+<li><p>Week 4 - Continuous distributions, Bayesian calculations with conjugate distributions - using beta prior with binomial likelihood</p>
+<ul>
+<li><p>Day 1 - Continuous distributions, HW 10</p></li>
+<li><p>Day 2 - Continuous distributions, HW 11</p></li>
+<li><p>Day 3 (long block) - Bayesian calculations with beta and binomial distributions, HW 12</p></li>
+<li><p>Day 4 - Bayesian calculations with beta and binomial distributions, HW 13</p></li>
+</ul></li>
+<li><p>Week 5 - Normal distributions, Bayesian credible intervals, hypothesis testing</p>
+<ul>
+<li><p>Day 1 - Bayesian calculations with normally distributed random variables, HW 14</p></li>
+<li><p>Day 2 (long block) - Bayesian credible intervals, hypothesis testing, HW 15</p></li>
+</ul></li>
+<li><p>Week 6 - Test 2, Comparison with frequentist analysis</p>
+<ul>
+<li><p>Day 1 - Review</p></li>
+<li><p>Day 2 - Test 2</p></li>
+<li><p>Day 3 (long block) - Comparison with frequentist analysis - p-values and confidence intervals (proportions) HW 15.5 (problems from AP statistics course)</p></li>
+<li><p>Day 4 - Comparison with frequentist analysis - p-values and confidence intervals, HW 16</p></li>
+</ul></li>
+<li><p>Week 7 - Continuous distributions, Bayesian calculations with conjugate distributions</p>
+<ul>
+<li><p>Day 1 - Confidence intervals, Poisson likelihood with Gamma prior, HW 17</p></li>
+<li><p>Day 2 - Bayesian models with continuous distributions, no HW</p></li>
+<li><p>Day 3 (long block) - Bayesian models with continuous distributions - difference of means (normally distributed)</p></li>
+<li><p>Day 4 - Review</p></li>
+</ul></li>
+<li><p>Week 8 - Linear regression, Test 3, Projects, Guest Speaker</p>
+<ul>
+<li><p>Day 1 - Linear regression, HW: generate three possible project ideas</p></li>
+<li><p>Day 2 - Test 3</p></li>
+<li><p>Day 3 (long block) - Finding and loading data, HW 20</p></li>
+<li><p>Day 4 - Guest Speaker, HW: work on project</p></li>
+</ul></li>
+<li><p>Week 9 - Linear regression, Projects, Guest Speaker</p>
+<ul>
+<li><p>Day 1 - Linear regression and projects, HW: project work</p></li>
+<li><p>Day 2 - Guest Speaker, HW: project work</p></li>
+<li><p>Day 3 (long block) - Projects, HW: project work</p></li>
+<li><p>Day 4 - Projects, HW: project draft</p></li>
+</ul></li>
+<li><p>Week 10 - Projects</p>
+<ul>
+<li><p>Day 1 - Projects</p></li>
+<li><p>Day 2 - Projects</p></li>
+<li><p>Day 3 (long block) - Projects</p></li>
+<li><p>Day 4 - Project presentations</p></li>
+<li><p>Finals block - Final projects due, Project presentations</p></li>
+</ul></li>
+</ul>
+<h1 id="test-topics">Test Topics</h1>
+<ul>
+<li><p>Test 1 Topics</p>
+<ul>
+<li><p>Statistics - some uses and basic vocabulary</p>
+<ul>
+<li><p>Identifying misleading uses of statistics</p></li>
+<li><p>Population</p></li>
+<li><p>Sample</p></li>
+<li><p>Statistic</p></li>
+<li><p>Sampling error</p></li>
+<li><p>Association</p></li>
+<li><p>Causation vs. correlation</p></li>
+<li><p>Confounding</p></li>
+<li><p>Lurking variable</p></li>
+<li><p>Bias, response bias</p></li>
+<li><p>Observational study vs. Experiment</p></li>
+<li><p>Placebo and placebo effect</p></li>
+<li><p>Control group and treatment group</p></li>
+<li><p>Blinding</p></li>
+</ul></li>
+<li><p>Introduction to probability and Bayes’ Theorem</p>
+<ul>
+<li><p>Joint probability</p></li>
+<li><p>Conditional Probability</p></li>
+<li><p>Intersections and unions</p></li>
+<li><p>Probability of disjoint (mutually exclusive) events</p></li>
+<li><p>Independent events</p></li>
+<li><p>Applications of probability rules (problems from class...)</p></li>
+</ul></li>
+<li><p>Discrete random variables</p>
+<ul>
+<li><p>Mean (expected value)</p></li>
+<li><p>Variance</p></li>
+<li><p>Joint probabilities</p></li>
+<li><p>Conditional probabilities</p></li>
+<li><p>Independent random variables</p></li>
+<li><p>Binomial random variables (probability distribution, mean, variance, applicability)</p></li>
+</ul></li>
+</ul></li>
+<li><p>Test 2 Topics</p>
+<ul>
+<li><p>Discrete random variables, including...</p>
+<ul>
+<li><p>Binomial random variables</p></li>
+<li><p>Poisson random variables</p></li>
+</ul></li>
+<li><p>Continuous random variables</p>
+<ul>
+<li><p>Probability distribution function</p></li>
+<li><p>Integrating pdf to find probabilities</p></li>
+<li><p>Cumulative distribution function</p></li>
+<li><p>Mean, median, mode of continuous probability distribution functions</p></li>
+<li><p>Variance and standard deviation of continuous probability distributions</p></li>
+<li><p>IQR and quantiles</p></li>
+</ul></li>
+<li><p>Useful continuous distributions</p>
+<ul>
+<li><p>Uniform distribution</p></li>
+<li><p>Beta distribution</p></li>
+<li><p>Gamma distribution</p></li>
+<li><p>Normal distribution</p></li>
+<li><p>Exponential distribution</p></li>
+</ul></li>
+<li><p>Bayesian calculations with..</p>
+<ul>
+<li><p>Discrete priors</p></li>
+<li><p>Uniform priors</p></li>
+<li><p>Beta prior, binomial likelihood</p></li>
+<li><p>Normal prior, normal likelihood with known variance</p></li>
+<li><p>Improper priors</p></li>
+</ul></li>
+<li><p>Interpreting/summarizing posterior distributions:</p>
+<ul>
+<li><p>Posterior mean, median, mode</p></li>
+<li><p>Posterior variance, standard deviation</p></li>
+<li><p>Posterior IQR, quantiles</p></li>
+<li><p>Bayesian credible interval - equal tails or shortest</p></li>
+<li><p>Creating null vs. alternative hypothesis</p></li>
+<li><p>Hypothesis testing</p></li>
+</ul></li>
+</ul></li>
+<li><p>Test 3 Topics</p>
+<ul>
+<li><p>All topics from Test 1 and 2</p></li>
+<li><p>Comparison of Bayesian and frequentist methods</p></li>
+<li><p>Null hypothesis significance testing and p-values (frequentist perspective), calculating and interpreting p-values (Chapter 9/12, outside materials)</p></li>
+<li><p>Frequentist confidence intervals</p>
+<ul>
+<li><p>Interpreting confidence intervals</p></li>
+<li><p>Constructing a confidence interval for the mean of a normal distribution with known variance</p></li>
+<li><p>Constructing a confidence interval for a proportion</p></li>
+</ul></li>
+<li><p>Poisson likelihood with Gamma prior (calculating the posterior, constructing and interpreting a BCI, hypothesis testing)</p></li>
+<li><p>Bayesian hypothesis testing</p>
+<ul>
+<li><p>When the null hypothesis is an inequality, we calculate <span class="math inline"><em>P</em>(<em>H</em><sub>0</sub>)</span> under the posterior distribution</p></li>
+<li><p>When the null hypothesis is equality, we can check if the null value of the parameter is in the BCI, or we can construct a region of practical equivalence (ROPE) and look at the relationship between the ROPE and the BCI.</p></li>
+</ul></li>
+<li><p>Difference of means of normal distributions with known common variance</p>
+<ul>
+<li><p>For independent data or paired data</p></li>
+<li><p>Calculating posterior for <span class="math inline"><em>μ</em><sub>1</sub> − <em>μ</em><sub>2</sub></span>, using it to construct a BCI, perform hypothesis testing, etc.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<h1 id="final-project-assignment-outline">Final Project Assignment Outline</h1>
+<p><strong>Goal</strong>: The goal of this project is to use Bayesian methods and computation to analyze and derive conclusions about some real data that has meaning to you.<br />
+<br/>
+<strong>Part 1: Questions</strong><br />
+Come up with a question that you care about and that you wish to address. This can be a large question, broader than what you would like to solve with the project. It should be an interesting question - one for which a full answer could have an impact.</p>
+<p>Then, narrow this to one or several smaller, related questions that your statistical analysis will allow you to answer.<br />
+<br/>
+<strong>Part 2: Data</strong><br />
+You may gather the data yourself, or use another data source. You will submit your data. Include in your writeup the source of your data, as much as you know about the method of collection, and any concerns you have for the data in terms of bias, etc. Be clear about what variables were measured and how they were measured.<br />
+<br/>
+<strong>Part 3: Exploratory Data Analysis</strong><br />
+Read your data into R, and present numerical and graphical information that summarizes the data. For example, you may wish to report appropriate sample means or standard deviations, or present graphs like histograms or scatterplots. Be very clear about what the information that you include is representing, and carefully label your graphs. The goal here is to get a handle on some basic features of the data set before you delve into a statistical analysis.<br />
+<br/>
+<strong>Part 4: Data Analysis</strong><br />
+Perform an appropriate analysis of your data using Bayesian methods. How exactly this looks will vary widely depending on the kind of data you have and what question you would like to answer. It will be helpful for you to be communicating early and often with me about what methods might be appropriate for your data. If appropriate, you may include related frequentist methods in your analysis.</p>
+<p>The methods you use need to go beyond the methods we have used in class. For example, it would be insufficient to simply estimate a proportion by using a beta prior with a binomial likelihood as you did with homework 12 - although such a method could be one piece of your analysis. As another example, performing a simple linear regression as we will explore in class will not be sufficient - although expanding on the ideas of simple linear regression to consider a problem of multiple linear regression could work very well.</p>
+<p>Other methods you could explore from a Bayesian perspective include: (multiple) linear regression (including ridge regression and/or the lasso) logistic regression, Poisson processes, classification methods, time series, Gibbs sampling (or other MCMC methods), Markov chains, or natural language processing.</p>
+<p>Clearly explain your method. In particular, be sure to justify any prior distributions that you use, with the goal of making them acceptable to a skeptical audience.<br />
+<br/>
+<strong>Part 5 Results:</strong><br />
+Present the results of your Bayesian analysis clearly, and interpret your analysis in the context of the question that you wished to answer.<br />
+<br/>
+<strong>The Output</strong>: You will submit a written report that includes all of the elements above and appropriate graphics. You will also summarize your methods and results in a 10 minute presentation to the class.</p>
+</article>
+</body>
+</html>
